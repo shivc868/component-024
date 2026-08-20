@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina — Create Beyond Imagination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Critical: prevent flash of unstyled content while the module loads */
+      html {
+        background-color: #050505;
+      }
+      body {
+        visibility: hidden;
+      }
+      body.is-ready {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <!-- ======== Backdrop scene ======== -->
+        <div class="scene" aria-hidden="true">
+          <canvas class="scene__canvas"></canvas>
+
+          <div class="scene__grain"></div>
+          <div class="scene__vignette"></div>
+        </div>
+
+        <!-- ======== Navbar ======== -->
+        <header class="nav">
+          <a class="nav__logo" href="#" aria-label="Lumina home">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 1 C 17.5 9 19 12.5 23 14 L 31 16 L 23 18 C 19 19.5 17.5 23 16 31 C 14.5 23 13 19.5 9 18 L 1 16 L 9 14 C 13 12.5 14.5 9 16 1 Z"
+                fill="#f2f2f2"
+              />
+            </svg>
+          </a>
+          <nav class="nav__links" aria-label="Primary">
+            <a href="#">Studio</a>
+            <a href="#">Features</a>
+            <a href="#">Process</a>
+            <a href="#">Stories</a>
+            <a href="#">Journal</a>
+          </nav>
+          <div class="nav__actions">
+            <a class="btn btn--ghost" href="#">Sign In</a>
+            <a class="btn btn--light" href="#">Start Creating</a>
+          </div>
+        </header>
+
+        <!-- ======== Hero content ======== -->
+        <div class="hero__content">
+          <div class="hero__badge">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 0.5 C 8.7 4.5 9.5 6.3 11.5 7 L 15.5 8 L 11.5 9 C 9.5 9.7 8.7 11.5 8 15.5 C 7.3 11.5 6.5 9.7 4.5 9 L 0.5 8 L 4.5 7 C 6.5 6.3 7.3 4.5 8 0.5 Z"
+                fill="#e8e8e8"
+              />
+            </svg>
+            <span>Where light meets intelligence.</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__line">Create Beyond</span>
+            <span class="hero__line">The Edge Of</span>
+            <span class="hero__line">Imagination.</span>
+          </h1>
+
+          <a class="btn btn--light btn--cta" href="#">Start Creating</a>
+        </div>
+
+        <!-- ======== Bottom strip ======== -->
+        <div class="hero__footer">
+          <p class="hero__desc">
+            Lumina is an AI creative studio that senses your direction and
+            moves with you — turning raw ideas into finished visuals at the
+            speed of thought.
+          </p>
+          <div class="hero__trust">
+            <div class="avatars">
+              <span class="avatar" style="--a: #8b5cf6"></span>
+              <span class="avatar" style="--a: #ec4899"></span>
+              <span class="avatar" style="--a: #38bdf8"></span>
+              <span class="avatar" style="--a: #f0abfc"></span>
+            </div>
+            <span class="hero__trust-text">Trusted by 40k+ visionaries.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
